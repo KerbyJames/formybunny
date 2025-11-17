@@ -1,0 +1,206 @@
+/* ======================================================
+   FULL CENTERED SKY-BLUE THEME
+====================================================== */
+
+/* Global Body Style */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.7;
+    background: #aed1e6;
+    color: #3a3a3a;
+    text-align: center; /* Centers all inline text */
+    display: block;     /* Fix for perfect page centering */
+}
+
+
+/* Universal Centering for All Content */
+.center-all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centers all elements */
+    text-align: center;    /* Centers text */
+}
+
+/* ======================================================
+   MENU BAR (index.html)
+====================================================== */
+#menu {
+    background: #d8efff;
+    padding: 14px;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(100, 150, 255, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+#menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #175b9f;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: #2d8cff;
+    text-decoration: underline;
+}
+
+/* Iframe Display */
+#content {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+/* ======================================================
+   PAGE TEXT (FULLY CENTERED)
+====================================================== */
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #175b9f;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #2f7ecb;
+    font-style: italic;
+}
+
+h2 {
+    color: #175b9f;
+    margin-top: 40px;
+    font-weight: 700;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Force ALL text to be centered */
+p, li, h1, h2, h3, h4, strong {
+    text-align: center !important;
+}
+
+/* ======================================================
+   IMAGES
+====================================================== */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #bfe4ff;
+    box-shadow: 0 4px 10px rgba(100, 150, 255, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+/* ======================================================
+   LISTS
+====================================================== */
+ul {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 700px;
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 6px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ======================================================
+   LINKS
+====================================================== */
+a {
+    color: #2f7ecb;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #60a9ff;
+    text-decoration: underline;
+}
+
+/* Paragraph Styling */
+p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: #cfe9ff;
+    margin: 30px auto;
+    width: 80%;
+}
+
+/* ======================================================
+   MEMBER CARDS
+====================================================== */
+.member-card {
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ======================================================
+   RESPONSIVE DESIGN
+====================================================== */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    h1 { font-size: 2em; }
+
+    #menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .member-card {
+        padding: 15px;
+    }
+}
+
+
